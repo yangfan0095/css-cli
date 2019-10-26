@@ -9,6 +9,10 @@
   "bin":{
     "happy-css": "bin/happy-css"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yangfan0095/happy-css.git"
+  },
   "keywords": [
     "happy-css",
     "common-css",
