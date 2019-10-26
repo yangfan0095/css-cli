@@ -1,0 +1,26 @@
+{
+  "name": "happy-css",
+  "version": "1.0.0",
+  "description": "a common css cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "node bin/happy-css create css-common"
+  },
+  "bin":{
+    "happy-css": "bin/happy-css"
+  },
+  "keywords": [
+    "happy-css",
+    "common-css",
+    "common-css-cli"
+  ],
+  "author": "yangfan95",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "commander": "^2.9.0",
+    "download-git-repo": "^1.0.0",
+    "inquirer": "^3.0.6",
+    "ora": "^1.2.0"
+  }
+}
