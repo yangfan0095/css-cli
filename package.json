@@ -1,20 +1,20 @@
 {
-  "name": "happy-css",
+  "name": "css-cli",
   "version": "1.0.0",
   "description": "a common css cli",
   "main": "index.js",
   "scripts": {
-    "test": "node bin/happy-css create css-common"
+    "test": "node bin/css-cli create css-common"
   },
   "bin":{
-    "happy-css": "bin/happy-css"
+    "css-cli": "bin/css-cli"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yangfan0095/happy-css.git"
+    "url": "https://github.com/yangfan0095/css-cli.git"
   },
   "keywords": [
-    "happy-css",
+    "css-cli",
     "common-css",
     "common-css-cli"
   ],

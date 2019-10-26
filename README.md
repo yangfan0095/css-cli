@@ -1,12 +1,12 @@
-## happy-css
+## css-cli
 
 简介 一个常用css包生成工具
 
 ### quick start 
 
-npm install happy-css -g
+npm install css-cli -g
 
-happy-css create [生成的css文件夹名]
+css-cli create [生成的css文件夹名]
 
 
 ```
