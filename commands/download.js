@@ -5,6 +5,7 @@ const download = require('download-git-repo')
 const ora = require('ora')
 const fs = require('fs')
 const path = require('path')
+const scss2css = require('../tasks/scss2css')
 
 const option =  program.parse(process.argv).args[0]
 const defaultName = typeof option === 'string' ? option : 'common'
@@ -46,13 +47,23 @@ module.exports = prompt(question).then(({name, template}) => {
   const gitPlace = tplList[templateName]['place'];
   const gitBranch = tplList[templateName]['branch'];
   const spinner = ora('Downloading please wait...');
+  const isCssTemplate = templateName === 'css-template'
   spinner.start();
+
+  const doneCb = ()=>{
+    console.log('模板已生成!')
+  }
   download(`${gitPlace}${gitBranch}`, `./${projectName}`, (err) => {
     if (err) {
       console.log(chalk.red(err))
       process.exit()
     }
-    console.log('模板已生成!')
     spinner.stop();
+    //todo 如果是css模板 则将下载的scss模板转换为css模板
+    // if(isCssTemplate){
+    //   scss2css(projectName,doneCb)
+    //   return
+    // }
+    doneCb()
   })
 })

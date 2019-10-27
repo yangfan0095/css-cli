@@ -7,9 +7,8 @@ program.version(require('../package').version )
 program.usage('<command>')
 
 program.command('create')
-  .option('-f, --foo', 'enable some foo')
-  .description('Generate a common css file')
-  .alias('i')
+  .description('生成一个公共样式文件夹')
+  .alias('c')
   .action(() => {
     require('../commands/download')
   })

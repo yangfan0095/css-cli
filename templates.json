@@ -2,6 +2,10 @@
     "scss-template": {
       "place": "yangfan0095/scss-template",
       "branch": ""
+    },
+    "css-template": {
+      "place": "yangfan0095/css-template",
+      "branch": ""
     }
   }
   
